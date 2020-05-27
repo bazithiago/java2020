@@ -25,11 +25,23 @@
 // }
 // passoAPasso()
 
-console.log("5) Mais um representante:")
+// console.log("5) Mais um representante:")
 
-function passandoPor() {
-    for(var i = 0; i < 4; i++) {
-        console.log("aqui eu tenho o valor de " + i)
-     }
+// function passandoPor() {
+//     for(var i = 0; i < 4; i++) {
+//         console.log("aqui eu tenho o valor de " + i)
+//      }
+// }
+// passandoPor()
+
+
+console.log("Par ou ímpar")
+
+function passandoPelosPares() {
+    for (var i = 0; i < 7; i++) {
+        if (i%2===0) {
+            console.log("aqui eu tenho o valor de " + i)
+        }
+    }
 }
-passandoPor()
+passandoPelosPares()
