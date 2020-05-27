@@ -88,10 +88,18 @@
 // console.log(filosofoHipster("Jogador","Alemanha",12))
 // console.log(filosofoHipster("Músico","Argentina",1))
 
-console.log("11) Um exercício sem precedentes")
+// console.log("11) Um exercício sem precedentes")
 
-function podeSeAposentar(idade,sexo,anosDeContribuicao) {
-    return anosDeContribuicao >= 30 && ((sexo === "F" && idade >= 60) || (sexo ==="M" && idade >= 65))
+// function podeSeAposentar(idade,sexo,anosDeContribuicao) {
+//     return anosDeContribuicao >= 30 && ((sexo === "F" && idade >= 60) || (sexo ==="M" && idade >= 65))
+// }
+
+// console.log(podeSeAposentar(70,"M",15))
+
+console.log("12) Parque de Diversões")
+
+function podeSubir(alturaPessoa,vemComCompania,temProblemaCardiaco) {
+    return temProblemaCardiaco===false && ((alturaPessoa >= 1.5) || (alturaPessoa >= 1.2 && vemComCompania===true))
 }
 
-console.log(podeSeAposentar(70,"M",15))
+console.log(podeSubir(1.3,false,false))
