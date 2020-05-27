@@ -16,11 +16,20 @@
 // }
 // imprimir5vezes5();
 
-console.log("4) Passo a passo:")
+// console.log("4) Passo a passo:")
 
-function passoAPasso() {
-    for(var i = 0; i < 5; i++) {
-        console.log(i)
+// function passoAPasso() {
+//     for(var i = 0; i < 5; i++) {
+//         console.log(i)
+//      }
+// }
+// passoAPasso()
+
+console.log("5) Mais um representante:")
+
+function passandoPor() {
+    for(var i = 0; i < 4; i++) {
+        console.log("aqui eu tenho o valor de " + i)
      }
 }
-passoAPasso()
+passandoPor()
