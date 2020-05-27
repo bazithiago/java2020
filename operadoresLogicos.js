@@ -78,12 +78,20 @@
 
 // console.log(possoIrAoBanco("Segunda",10));
 
-console.log("8) Filósofo hipster?")
+// console.log("8) Filósofo hipster?")
 
-function filosofoHipster(profissao,nacionalidade,quilometros){
-    return profissao==="Músico" && nacionalidade==="Brasil" && quilometros>2
+// function filosofoHipster(profissao,nacionalidade,quilometros){
+//     return profissao==="Músico" && nacionalidade==="Brasil" && quilometros>2
+// }
+
+// console.log(filosofoHipster("Músico","Brasil",5))
+// console.log(filosofoHipster("Jogador","Alemanha",12))
+// console.log(filosofoHipster("Músico","Argentina",1))
+
+console.log("11) Um exercício sem precedentes")
+
+function podeSeAposentar(idade,sexo,anosDeContribuicao) {
+    return anosDeContribuicao >= 30 && ((sexo === "F" && idade >= 60) || (sexo ==="M" && idade >= 65))
 }
 
-console.log(filosofoHipster("Músico","Brasil",5))
-console.log(filosofoHipster("Jogador","Alemanha",12))
-console.log(filosofoHipster("Músico","Argentina",1))
+console.log(podeSeAposentar(70,"M",15))
