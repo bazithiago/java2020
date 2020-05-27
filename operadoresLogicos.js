@@ -70,10 +70,20 @@
 
 // console.log(eNumeroDaSorte(15));
 
-console.log("7) Posso ir ao banco")
+// console.log("7) Posso ir ao banco")
 
-function possoIrAoBanco(diaDaSemana,horaAtual) {
-    return (diaDaSemana !== "Sábado" && diaDaSemana !== "Domingo") && (horaAtual > 9 && horaAtual < 15)
+// function possoIrAoBanco(diaDaSemana,horaAtual) {
+//     return (diaDaSemana !== "Sábado" && diaDaSemana !== "Domingo") && (horaAtual > 9 && horaAtual < 15)
+// }
+
+// console.log(possoIrAoBanco("Segunda",10));
+
+console.log("8) Filósofo hipster?")
+
+function filosofoHipster(profissao,nacionalidade,quilometros){
+    return profissao==="Músico" && nacionalidade==="Brasil" && quilometros>2
 }
 
-console.log(possoIrAoBanco("Segunda",10));
+console.log(filosofoHipster("Músico","Brasil",5))
+console.log(filosofoHipster("Jogador","Alemanha",12))
+console.log(filosofoHipster("Músico","Argentina",1))
