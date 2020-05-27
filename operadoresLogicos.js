@@ -62,10 +62,18 @@
 
 // console.log(sinal(-20));
 
-console.log("6) O número da sorte")
+// console.log("6) O número da sorte")
 
-function eNumeroDaSorte(numero) {
-    return numero > 0 && (numero%3==0 || numero%2==0) && numero !== 15
+// function eNumeroDaSorte(numero) {
+//     return numero > 0 && (numero%3==0 || numero%2==0) && numero !== 15
+// }
+
+// console.log(eNumeroDaSorte(15));
+
+console.log("7) Posso ir ao banco")
+
+function possoIrAoBanco(diaDaSemana,horaAtual) {
+    return (diaDaSemana !== "Sábado" && diaDaSemana !== "Domingo") && (horaAtual > 9 && horaAtual < 15)
 }
 
-console.log(eNumeroDaSorte(15));
+console.log(possoIrAoBanco("Segunda",10));
