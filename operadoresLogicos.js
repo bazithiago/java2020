@@ -96,10 +96,29 @@
 
 // console.log(podeSeAposentar(70,"M",15))
 
-console.log("12) Parque de Diversões")
+// console.log("12) Parque de Diversões")
 
-function podeSubir(alturaPessoa,vemComCompania,temProblemaCardiaco) {
-    return temProblemaCardiaco===false && ((alturaPessoa >= 1.5) || (alturaPessoa >= 1.2 && vemComCompania===true))
+// function podeSubir(alturaPessoa,vemComCompania,temProblemaCardiaco) {
+//     return temProblemaCardiaco===false && ((alturaPessoa >= 1.5) || (alturaPessoa >= 1.2 && vemComCompania===true))
+// }
+
+// console.log(podeSubir(1.3,false,false))
+
+console.log("13) Agora vamos dar um prêmio")
+
+function medalhaSegundoOPosto(posicao){
+    if(posicao===1){
+        return "ouro"
+    }
+    if (posicao===2) {
+        return "prata"
+    }
+    if (posicao===3) {
+        return "bronze"
+    }
+    else {
+        return "Continue participando"
+    }
 }
 
-console.log(podeSubir(1.3,false,false))
+console.log(medalhaSegundoOPosto(3))
