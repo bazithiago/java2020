@@ -82,13 +82,25 @@
 
 // console.log(somarMoedasDe25(7));
 
-console.log("10 Continuamos mudando:")
+// console.log("10 Continuamos mudando:")
 
-function somaDosPares(x) {
-    var soma = 0
-    for (var i = 0; i <= x; i += 2) {
-        soma = soma + i;
+// function somaDosPares(x) {
+//     var soma = 0
+//     for (var i = 0; i <= x; i += 2) {
+//         soma = soma + i;
+//     } return soma
+// }
+
+// console.log(somaDosPares(4));
+
+console.log("11) Somatória:")
+
+function somatoria(numero) {
+    var soma = 0;
+
+    for (var i = 0; i < numero; i++) {
+        soma += i;
     } return soma
 }
 
-console.log(somaDosPares(4));
+console.log(somatoria(4))
