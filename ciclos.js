@@ -46,12 +46,26 @@
 // }
 // passandoPelosPares()
 
-console.log("7) Repetição")
+// console.log("7) Repetição")
 
-function imprimirAzul(x) {
-    for (var i = 0; i < x; i++) {
-        console.log("Azul")
-    } 
-}
+// function imprimirAzul(x) {
+//     for (var i = 0; i < x; i++) {
+//         console.log("Azul")
+//     } 
+// }
 
-imprimirAzul(3);
+// imprimirAzul(3);
+
+console.log("8) Repetição variável. Moedas de 0.25:")
+
+
+function somar5MoedasDe25Centavos() {
+    var moeda = 0
+
+    for (var i = 0; i < 5; i++) {
+        moeda +=  0.25
+    } return moeda
+} 
+
+somar5MoedasDe25Centavos();
+console.log(somar5MoedasDe25Centavos())
