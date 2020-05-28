@@ -35,13 +35,23 @@
 // passandoPor()
 
 
-console.log("Par ou ímpar")
+// console.log("Par ou ímpar")
 
-function passandoPelosPares() {
-    for (var i = 0; i < 7; i++) {
-        if (i%2===0) {
-            console.log("aqui eu tenho o valor de " + i)
-        }
-    }
+// function passandoPelosPares() {
+//     for (var i = 0; i < 7; i++) {
+//         if (i%2===0) {
+//             console.log("aqui eu tenho o valor de " + i)
+//         }
+//     }
+// }
+// passandoPelosPares()
+
+console.log("7) Repetição")
+
+function imprimirAzul(x) {
+    for (var i = 0; i < x; i++) {
+        console.log("Azul")
+    } 
 }
-passandoPelosPares()
+
+imprimirAzul(3);
