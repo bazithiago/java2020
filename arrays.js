@@ -1,9 +1,27 @@
-console.log ("7)Adicionando itens")
+console.log ("8)Adicionando itens")
 
-var pertences = ["espada", "escudo", "tocha"];
+var umArray = [1,2,3];
+var outroArray = [4, 5]
 
-console.log(pertences)
+function mover(umArray,outroArray) {
+    var pegarElemento = umArray.pop();
+    outroArray.push(pegarElemento)
+    
+    return [umArray,outroArray]
+} 
 
-pertences.push("cross")
+console.log(mover(umArray, outroArray));
 
-console.log(pertences)
+
+
+
+
+
+// function mover(umArray, outroArray) {
+//     var pegarElemento = umArray.pop();
+//         outroArray.push(pegarElemento);
+    
+//     umArray;
+//     outroArray;
+    
+//     }
