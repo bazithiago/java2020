@@ -56,16 +56,28 @@
 
 // imprimirAzul(3);
 
-console.log("8) Repetição variável. Moedas de 0.25:")
+// console.log("8) Repetição variável. Moedas de 0.25:")
 
 
-function somar5MoedasDe25Centavos() {
-    var moeda = 0
+// function somar5MoedasDe25Centavos() {
+//     var moeda = 0
 
-    for (var i = 0; i < 5; i++) {
-        moeda +=  0.25
-    } return moeda
+//     for (var i = 0; i < 5; i++) {
+//         moeda +=  0.25
+//     } return moeda
+// } 
+
+// somar5MoedasDe25Centavos();
+// console.log(somar5MoedasDe25Centavos())
+
+console.log("9) Muitas coxinhas")
+
+function somarMoedasDe25(quantidadeDeMoedas) {
+    var moedas = 0;
+
+    for(var i=0; i<quantidadeDeMoedas; i++) {
+        moedas += 0.25
+    } return moedas;
 } 
 
-somar5MoedasDe25Centavos();
-console.log(somar5MoedasDe25Centavos())
+console.log(somarMoedasDe25(7));
