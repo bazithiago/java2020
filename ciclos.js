@@ -93,14 +93,27 @@
 
 // console.log(somaDosPares(4));
 
-console.log("11) Somatória:")
+// console.log("11) Somatória:")
 
-function somatoria(numero) {
-    var soma = 0;
+// function somatoria(numero) {
+//     var soma = 0;
 
-    for (var i = 0; i < numero; i++) {
-        soma += i;
-    } return soma
+//     for (var i = 0; i < numero; i++) {
+//         soma += i;
+//     } return soma
+// }
+
+// console.log(somatoria(4))
+
+console.log("12) Usain Bolt:")
+
+function caloriasDeTrote(numeroVoltas) {
+    var caloriasDeTrote = 0;
+
+    for (var i = 0; i < numeroVoltas; i++) {
+        caloriasDeTrote += 5 * (i+1)
+
+    } return caloriasDeTrote
 }
 
-console.log(somatoria(4))
+console.log(caloriasDeTrote(2))
