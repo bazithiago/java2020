@@ -70,14 +70,25 @@
 // somar5MoedasDe25Centavos();
 // console.log(somar5MoedasDe25Centavos())
 
-console.log("9) Muitas coxinhas")
+// console.log("9) Muitas coxinhas")
 
-function somarMoedasDe25(quantidadeDeMoedas) {
-    var moedas = 0;
+// function somarMoedasDe25(quantidadeDeMoedas) {
+//     var moedas = 0;
 
-    for(var i=0; i<quantidadeDeMoedas; i++) {
-        moedas += 0.25
-    } return moedas;
-} 
+//     for(var i=0; i<quantidadeDeMoedas; i++) {
+//         moedas += 0.25
+//     } return moedas;
+// } 
 
-console.log(somarMoedasDe25(7));
+// console.log(somarMoedasDe25(7));
+
+console.log("10 Continuamos mudando:")
+
+function somaDosPares(x) {
+    var soma = 0
+    for (var i = 0; i <= x; i += 2) {
+        soma = soma + i;
+    } return soma
+}
+
+console.log(somaDosPares(4));
