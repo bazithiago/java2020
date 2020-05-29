@@ -1,14 +1,17 @@
-console.log("12. Mais prêmios:")
+console.log("18. Contagens:")
 
-function medalhaDeAcordoComPosto(numero) {
-    var medalhas = ["ouro","prata","bronze"];
+function quantidadeDeMesesComLucro(umPeriodo) {
 
-    if (numero > medalhas.length) {
-        return "nada"
-    }
-    else {
-        return medalhas[numero-1]
-    }
+    var quantidade = 0
+
+    for (let mes = 0; mes < umPeriodo.length; mes++) {
+        if (umPeriodo[mes] > 0) {
+            quantidade += 1
+        }
+            
+    } return quantidade
 }
 
-console.log(medalhaDeAcordoComPosto(4))
+console.log(quantidadeDeMesesComLucro([1,1,-2,3]))
+
+
