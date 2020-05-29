@@ -1,11 +1,12 @@
-console.log("Desafio Produto:")
+console.log("Desafio Fatorial:")
 
-function produto(array) {
+function fatorial(numero) {
     var resultado = 1;
-    for (var i = 0; i < array.length; i++) {
-        resultado *= array[i];
+
+    for (var i = 1; i < numero; i++) {
+        resultado *= i+1;
     } 
     return resultado;
 }
 
-console.log(produto([1, 4, 7]));
+console.log(fatorial(4));
