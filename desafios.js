@@ -1,24 +1,31 @@
-console.log("maisMenos")
+console.log("Escada")
 
-function maisMenos(array) {
-    let positivos = [];
-    let zeros = [];
-    let negativos = [];
+function escada(number) {
+   
+    let resultado = [];
 
+    for (let i = 1; i < number; i++) {
+        resultado.push(" ".repeat(number - i) + "#".repeat(i));
+    } ;
+   
+    return resultado;
+   
+   };
 
-    for (let i = 0; i < array.length; i++) {
-        if(array[i] > 0) {
-            positivos.push(array[i]);
-        } else if (array[i] == 0) {
-            zeros.push(array[i]);
-        } else {
-            negativos.push(array[i]);
-        }
-    }
-    
-    let compilados = [(positivos.length/array.length) , (zeros.length/array.length) , (negativos.length/array.length)];
+console.log(escada(5))
 
-    return compilados;
-}
+// ESSE MEU NÃO DEU NA PLATAFORMA, MAS DO BARINLY DEU E NÃO SEI ONDE TA A DIFERENCA. ACHEI! MAIOR IGUAL
 
-console.log(maisMenos([1, 2, 0, -1]))
+function escada(numero) {
+
+    let result = [];
+   
+    for (let i = 1; i <= numero; i++) {
+   
+      result.push(" ".repeat(numero - i) + "#".repeat(i));
+   
+    } ;
+   
+    return result;
+   
+   };
