@@ -1,18 +1,20 @@
-console.log("20. Filtrados:")
+console.log("21. Naipe de truco:")
 
-function saldoDeMesesComLucro(umPeriodo) {
+function naipeDeTruco(naipe) {
 
-    var mesesLucrativos = []
+    var baralho = []
 
-    for (let mes = 0; mes < umPeriodo.length; mes++) {
-        if (umPeriodo[mes] > 0) {
-            mesesLucrativos.push(umPeriodo[mes])
+    for (let i = 1; i < 13; i++) {
+        if (i < 8 ) {
+            baralho.push(i + " de " + naipe)
         }
-
-    } return mesesLucrativos
+        if (i > 9 ) {
+            baralho.push(i + " de " + naipe)
+        }
+    } return baralho
 
     
 }
 
-console.log(saldoDeMesesComLucro([100, 20, 0, -10, 10])) 
+console.log(naipeDeTruco("espadas")) 
 
