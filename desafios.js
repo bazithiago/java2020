@@ -1,31 +1,17 @@
-console.log("Escada")
+console.log("Arvore utopica")
 
-function escada(number) {
-   
-    let resultado = [];
+function tamanhoArvore(ciclos) {
+    let tamanhoAtual = 1;
+      
+    for (let i = 1; i <= ciclos; i++) {
+      if (i % 2 === 0) {
+        tamanhoAtual += 1
+      } else tamanhoAtual *= 2;
+  }
+    return tamanhoAtual
+    }
+  
+  
+  console.log(tamanhoArvore(3))
 
-    for (let i = 1; i < number; i++) {
-        resultado.push(" ".repeat(number - i) + "#".repeat(i));
-    } ;
-   
-    return resultado;
-   
-   };
-
-console.log(escada(5))
-
-// ESSE MEU NÃO DEU NA PLATAFORMA, MAS DO BARINLY DEU E NÃO SEI ONDE TA A DIFERENCA. ACHEI! MAIOR IGUAL
-
-function escada(numero) {
-
-    let result = [];
-   
-    for (let i = 1; i <= numero; i++) {
-   
-      result.push(" ".repeat(numero - i) + "#".repeat(i));
-   
-    } ;
-   
-    return result;
-   
-   };
+  
