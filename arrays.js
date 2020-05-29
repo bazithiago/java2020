@@ -1,17 +1,18 @@
-console.log("18. Contagens:")
+console.log("20. Filtrados:")
 
-function quantidadeDeMesesComLucro(umPeriodo) {
+function saldoDeMesesComLucro(umPeriodo) {
 
-    var quantidade = 0
+    var mesesLucrativos = []
 
     for (let mes = 0; mes < umPeriodo.length; mes++) {
         if (umPeriodo[mes] > 0) {
-            quantidade += 1
+            mesesLucrativos.push(umPeriodo[mes])
         }
-            
-    } return quantidade
+
+    } return mesesLucrativos
+
+    
 }
 
-console.log(quantidadeDeMesesComLucro([1,1,-2,3])) 
-// console.log(quantidadeDeMesesComLucro([1,1,-2,3])) 
+console.log(saldoDeMesesComLucro([100, 20, 0, -10, 10])) 
 
