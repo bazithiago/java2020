@@ -1,7 +1,14 @@
-console.log("10. Contém:")
+console.log("12. Mais prêmios:")
 
-function contem(array,numero) {
-    return array.indexOf(numero) !== -1
+function medalhaDeAcordoComPosto(numero) {
+    var medalhas = ["ouro","prata","bronze"];
+
+    if (numero > medalhas.length) {
+        return "nada"
+    }
+    else {
+        return medalhas[numero-1]
+    }
 }
 
-console.log(contem([1, 6, 3, 6], 3))
+console.log(medalhaDeAcordoComPosto(4))
