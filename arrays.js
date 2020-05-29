@@ -1,27 +1,7 @@
-console.log ("8)Adicionando itens")
+console.log("10. Contém:")
 
-var umArray = [1,2,3];
-var outroArray = [4, 5]
+function contem(array,numero) {
+    return array.indexOf(numero) !== -1
+}
 
-function mover(umArray,outroArray) {
-    var pegarElemento = umArray.pop();
-    outroArray.push(pegarElemento)
-    
-    return [umArray,outroArray]
-} 
-
-console.log(mover(umArray, outroArray));
-
-
-
-
-
-
-// function mover(umArray, outroArray) {
-//     var pegarElemento = umArray.pop();
-//         outroArray.push(pegarElemento);
-    
-//     umArray;
-//     outroArray;
-    
-//     }
+console.log(contem([1, 6, 3, 6], 3))
