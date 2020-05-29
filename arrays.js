@@ -13,5 +13,5 @@ function quantidadeDeMesesComLucro(umPeriodo) {
 }
 
 console.log(quantidadeDeMesesComLucro([1,1,-2,3])) 
-console.log(quantidadeDeMesesComLucro([1,1,-2,3])) 
+// console.log(quantidadeDeMesesComLucro([1,1,-2,3])) 
 
